@@ -28,10 +28,13 @@ public class MainActivity extends AppCompatActivity {
         {
             case R.id.settings:
                 Log.i("Item selected","Settings");
+                return true;
 
             case R.id.help:
                 Log.i("Item selected","Help");
-            default:return false;
+                return true;
+            default:
+                return false;
         }
     }
 
